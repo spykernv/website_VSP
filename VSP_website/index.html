@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Virtual Home Staging - Transformez vos espaces avec notre service de home staging virtuel professionnel et innovant">
+    <title>Virtual Staging Pro - Home Staging Virtuel 3D</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">VSP<span class="logo-dot">.</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#process">Processus</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D -->
+    <section class="hero" id="hero">
+        <div class="hero-canvas-container">
+            <canvas id="hero-canvas"></canvas>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Transformez</span>
+                    <span class="title-line">Vos Espaces</span>
+                    <span class="title-line highlight">Virtuellement</span>
+                </h1>
+                <p class="hero-description">
+                    Home staging virtuel 3D de nouvelle génération. 
+                    Valorisez vos biens immobiliers avec des visualisations photoréalistes.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary btn-large">Commencer</a>
+                    <a href="#portfolio" class="btn-secondary btn-large">Voir Nos Réalisations</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nos Services</span>
+                <h2 class="section-title">Excellence en Home Staging Virtuel</h2>
+                <p class="section-description">
+                    Des solutions sur mesure pour sublimer chaque espace
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="1">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Staging Résidentiel</h3>
+                    <p class="service-description">
+                        Aménagements virtuels pour appartements, maisons et villas. Photos photoréalistes en 48h.
+                    </p>
+                    <ul class="service-features">
+                        <li>Rendu 4K haute définition</li>
+                        <li>Multiples styles disponibles</li>
+                        <li>Retouches illimitées</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-service="2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Staging Commercial</h3>
+                    <p class="service-description">
+                        Espaces commerciaux, bureaux et locaux professionnels avec visualisations 3D immersives.
+                    </p>
+                    <ul class="service-features">
+                        <li>Visites virtuelles 360°</li>
+                        <li>Brandng personnalisé</li>
+                        <li>Plans d'aménagement</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-service="3">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 3V21M15 3V21M3 9H21M3 15H21" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Rénovation Virtuelle</h3>
+                    <p class="service-description">
+                        Visualisez le potentiel de vos espaces avec des rénovations virtuelles avant/après.
+                    </p>
+                    <ul class="service-features">
+                        <li>Comparaison avant/après</li>
+                        <li>Scénarios multiples</li>
+                        <li>Conseils d'experts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Projets Réalisés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Satisfaction Client (%)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="48">0</div>
+                    <div class="stat-label">Délai Moyen (heures)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="35">0</div>
+                    <div class="stat-label">Ventes Plus Rapides (%)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Nos Réalisations</h2>
+                <p class="section-description">
+                    Découvrez la transformation virtuelle de nos projets
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" data-room="living"></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Résidentiel</span>
+                            <h3 class="portfolio-title">Salon Moderne</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" data-room="bedroom"></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Résidentiel</span>
+                            <h3 class="portfolio-title">Chambre Minimaliste</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" data-room="office"></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Commercial</span>
+                            <h3 class="portfolio-title">Bureau Contemporain</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" data-room="kitchen"></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Résidentiel</span>
+                            <h3 class="portfolio-title">Cuisine Design</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" data-room="restaurant"></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Commercial</span>
+                            <h3 class="portfolio-title">Restaurant Élégant</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" data-room="bathroom"></div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Résidentiel</span>
+                            <h3 class="portfolio-title">Salle de Bain Luxe</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Notre Processus</span>
+                <h2 class="section-title">Simple et Efficace</h2>
+                <p class="section-description">
+                    4 étapes pour transformer vos espaces
+                </p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step" data-step="1">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Envoi des Photos</h3>
+                        <p class="step-description">
+                            Téléchargez vos photos d'espaces vides. Nous acceptons tous les formats haute résolution.
+                        </p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+
+                <div class="process-step" data-step="2">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Choix du Style</h3>
+                        <p class="step-description">
+                            Sélectionnez parmi nos styles prédéfinis ou créez un brief personnalisé pour votre projet.
+                        </p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+
+                <div class="process-step" data-step="3">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Création 3D</h3>
+                        <p class="step-description">
+                            Nos experts créent votre staging virtuel avec des rendus photoréalistes en 3D.
+                        </p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+
+                <div class="process-step" data-step="4">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Livraison</h3>
+                        <p class="step-description">
+                            Recevez vos images 4K en 48h. Retouches illimitées jusqu'à satisfaction complète.
+                        </p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Prêt à Transformer Vos Espaces ?</h2>
+                <p class="cta-description">
+                    Rejoignez plus de 500 professionnels de l'immobilier qui nous font confiance
+                </p>
+                <a href="#contact" class="btn-primary btn-large">Démarrer Votre Projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Discutons de Votre Projet</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Parlons-en</h3>
+                    <p>Notre équipe est là pour répondre à toutes vos questions sur le home staging virtuel.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>contact@virtualstagingpro.fr</span>
+                        </div>
+                        <div class="contact-detail">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18001C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2.00001H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72001C9.23662 4.68007 9.47144 5.62273 9.80999 6.53001C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64001L8.08999 9.91001C9.51355 12.4136 11.5864 14.4865 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>+33 1 23 45 67 89</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Parlez-nous de votre projet..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large">Envoyer le Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">VSP<span class="logo-dot">.</span></a>
+                    <p>Virtual Staging Pro - Excellence en home staging virtuel 3D</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Staging Résidentiel</a></li>
+                            <li><a href="#services">Staging Commercial</a></li>
+                            <li><a href="#services">Rénovation Virtuelle</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Entreprise</h4>
+                        <ul>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#process">Processus</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Virtual Staging Pro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
